@@ -8,7 +8,7 @@ Zach Printz, zachary.h.printz@vanderbilt.edu, printzzh, PI
 ## Project Proposal  
 
 ### Description of Problem/Opportunity
-Predicting outcomes in professional golf, particularly on the PGA Tour, is a formidable challenge. The sport is characterized by significant week-to-week variability and a myriad of external factors that uniquely affect each player, making the task of accurately forecasting the winner of any given tournament exceptionally difficult. While predictive analysis in golf has been extensively explored, it remains an unconquered frontier, especially in the PGA Tour context. The availability of comprehensive data in the PGA Tour opens up new avenues for advanced data analysis. Traditional predictive models have made strides but often fall short in deciphering the complex patterns and nuances inherent in golf data. This presents a unique opportunity to apply more sophisticated and modern AI techniques, such as in-context learning, to not only enhance prediction accuracy but also to test these methods against established machine learning approaches. The project aims to explore these cutting-edge methodologies, assessing their potential to redefine predictive analytics in golf and potentially influence the future of sports anaytics.
+Predicting outcomes in professional golf, particularly on the PGA Tour, is a formidable challenge. The sport is characterized by significant week-to-week variability and a myriad of external factors that uniquely affect each player, making the task of accurately forecasting the winner of any given tournament exceptionally difficult. While predictive analysis in golf has been extensively explored, it remains an unconquered frontier, especially in the PGA Tour context. The availability of comprehensive data in the PGA Tour opens up new avenues for advanced data analysis. Traditional predictive models have made strides but often fall short in deciphering the complex patterns and nuances inherent in golf data. This presents a unique opportunity to apply more sophisticated and modern AI techniques, such as in-context learning, to not only enhance prediction accuracy but also to test these methods against established machine learning approaches. The project aims to explore these cutting-edge methodologies, assessing their potential to redefine predictive analytics in golf and potentially influence the future of sports analytics.
 
 ### Proposed Solution/Approach
 For this project, I propose a two-pronged approach to analyze data from the PGA Tour, with an emphasis on exploring both traditional machine learning models and innovative in-context learning techniques.
@@ -36,7 +36,7 @@ Validation and Assessment (4/1 - 4/14): Assess the effectiveness of both models 
 
 Project Finalization and Documentation (4/15 - 4/22): Conclude the project by consolidating all findings. Finalize the models based on validation feedback, and document the project's insights, learnings, and recommendations.
 
-## Goals of project 
+## Goals of Project 
 
    1. High Accuracy in Traditional Model Predictions: Achieve a high level of predictive accuracy using traditional machine learning methods. This goal is centered on effectively forecasting player finishes in PGA Tour events using established data analysis techniques.
    2. High Accuracy in In-Context Learning Model Predictions: Attain similar or superior predictive accuracy with the in-context learning model. This emphasizes exploring the potential of modern AI methodologies in sports predictions.
