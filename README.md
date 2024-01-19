@@ -8,13 +8,13 @@ Zach Printz, zachary.h.printz@vanderbilt.edu, printzzh, PI
 ## Project Proposal  
 
 ### Description of Problem/Opportunity
-Predicting outcomes in professional golf, particularly on the PGA Tour, is a formidable challenge. The sport is characterized by significant week-to-week variability and a myriad of external factors that uniquely affect each player, making the task of accurately forecasting the winner of any given tournament exceptionally difficult. While predictive analysis in golf has been extensively explored, it has yet to be mastered. New technological developments with regards to AI open up new avenues for advanced data analysis. Traditional predictive models have been successful but often fall short in deciphering the complex patterns and nuances inherent in golf data. This presents a unique opportunity to apply more sophisticated and modern AI techniques, such as in-context learning, to not only enhance prediction accuracy but also to test these methods against established machine learning approaches. The project aims to explore these cutting-edge methodologies, assessing their potential to redefine predictive analytics in golf and potentially influence the future of sports analytics.
+Predicting outcomes in professional golf, particularly on the PGA Tour, is a formidable challenge. The sport is characterized by significant week-to-week variability and a myriad of external factors that uniquely affect each player, making the task of accurately forecasting the winner of any given tournament exceptionally difficult. While predictive analysis in golf has been extensively explored, it has yet to be mastered. New technological developments with regards to large language models open up new avenues for advanced data analysis. Traditional predictive models have been successful but often fall short in deciphering the complex patterns and nuances inherent in golf data. This presents a unique opportunity to apply more sophisticated and modern AI techniques, such as in-context learning, to not only enhance prediction accuracy but also to test these methods against established machine learning approaches. The project aims to explore these cutting-edge methodologies, assessing their potential to redefine predictive analytics in golf and potentially influence the future of sports analytics.
 
 ### Proposed Solution/Approach
 For this project, I propose a two-pronged approach to analyze data from the PGA Tour, with an emphasis on exploring both traditional machine learning models and innovative in-context learning techniques.
 
    1. Traditional Machine Learning Analysis: Initially, the project will utilize data directly sourced from the PGA Tour website, focusing on strokes gained and other relevant performance metrics. This phase will involve the application of established machine learning methods such as linear regression, random forest, gradient boosting, and others. The aim is to establish a baseline predictive model by leveraging these traditional approaches.
-   2. In-Context Learning Analysis: Subsequent to the traditional model, the project will shift focus to explore the capabilities of in-context learning. This approach will involve utilizing a suite of advanced AI tools, including ChatGPT Advanced Data Analysis, Claude, and Microsoft Copilot, each offering unique capabilities in processing PGA Tour data. The key advantage here lies in their varying strengths, particularly in terms of context window and analytical depth. While Claude, known for its expanded context window, might emerge as the frontrunner, the project remains open to leveraging whichever tool demonstrates the strongest results in understanding and interpreting the data. The overarching goal is to critically assess whether this modern, multi-tool AI approach can surpass traditional methods, not only in prediction accuracy but also in the depth and relevance of insights generated.
+   2. In-Context Learning Analysis: Subsequent to the traditional model, the project will shift focus to explore the capabilities of in-context learning. This approach will involve utilizing a suite of advanced AI tools, including ChatGPT Advanced Data Analysis, Claude, and Microsoft Copilot, each offering unique capabilities in processing PGA Tour data. This type of model has the potential to be a strong, emerging data analysis tool, so long as the large language model can immediately learn from examples. Due to the vast amount of data involved, this project may require the use of a large context window model. The overarching goal is to critically assess whether this modern, multi-tool AI approach can surpass traditional methods, not only in prediction accuracy but also in the depth and relevance of insights generated.
 
 Throughout the project, the  capabilities of AI will play a crucial role in autonomously determining the most effective analysis techniques, adapting to the nuances of the PGA Tour data. This flexible and dynamic model selection is aimed at enhancing the overall accuracy of predictions and pushing the boundaries of what is possible in sports analytics. The ultimate objective is to compare the effectiveness of these two distinct methodologies in predicting PGA Tour outcomes, potentially paving the way for a new era in predictive analytics within the realm of professional golf.
 
@@ -46,58 +46,33 @@ Project Finalization and Documentation (4/15 - 4/22): Conclude the project by co
 
 ## Project Metrics 
 
+The project will use Normalized Discounted Cumulative Gain (NDCG) to evaluate the performance of the models. This metric was chosen due to NDCG's ability to measure the entirety of a predicted tournament's leaderboard, while placing an emphasis on the top positions, which are the most important. The NDCG score is calculated based on the entire predicted leaderboard compared to the actual results. Higher scores indicate better performance, especially at the top of the leaderboard.
+
 ### Traditional Machine Learning Approach:
 
-   1. Accuracy in Predicting the #1 Player:
+   1. Accuracy in Predicting the Tournament Leaderboard:
    
-         A: Model predicts the #1 player in its top 40 10/15 times or more.
+         A: Model achieves an NDCG score of 0.75 or above 10/15 times or more.
 
-         B: Model predicts the #1 player in its top 40 7/15 times.
+         B: Model achieves an NDCG score of 0.8 or above 7/15 times or more.
 
-         C: Model predicts the #1 player in its top 40 4/15 times.
+         C: Model achieves an NDCG score of 0.75 or above 4/15 times or more.
 
-         D: Model predicts the #1 player in its top 40 1/15 times.
+         D: Model achieves an NDCG score of 0.75 or above 1/15 times or more.
 
-         F: Model never predicts the #1 player in its top 40.
-
-
-   2. Accuracy in Predicting the Tournament's Top 10:
-   
-         A: For at least 10/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         B: For 7/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         C: For 4/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         D: For 1/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         F: The model never places 3 or more of the actual top 10 finishers within its top 40 predicted players.
+         F: Model never achieves an NDCG score of 0.75 or above.
 
 ### In-Context Learning Approach:
 
-   1. Accuracy in Predicting the #1 Player:
+   1. Accuracy in Predicting the Tournament Leaderboard:
    
-         A: Model predicts the #1 player in its top 40 10/15 times or more.
+         A: Model achieves an NDCG score of 0.75 or above 10/15 times or more.
 
-         B: Model predicts the #1 player in its top 40 7/15 times.
+         B: Model achieves an NDCG score of 0.8 or above 7/15 times or more.
 
-         C: Model predicts the #1 player in its top 40 4/15 times.
+         C: Model achieves an NDCG score of 0.75 or above 4/15 times or more.
 
-         D: Model predicts the #1 player in its top 40 1/15 times.
+         D: Model achieves an NDCG score of 0.75 or above 1/15 times or more.
 
-         F: Model never predicts the #1 player in its top 40.
-
-
-   2. Accuracy in Predicting the Tournament's Top 10:
-   
-         A: For at least 10/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         B: For 7/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         C: For 4/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         D: For 1/15 tournaments, the model places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
-         F: The model never places 3 or more of the actual top 10 finishers within its top 40 predicted players.
-
+         F: Model never achieves an NDCG score of 0.75 or above.
 
